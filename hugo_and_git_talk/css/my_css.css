@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+direction: rtl;
+
+
+  .reveal {
+  font-family: "Tajawal", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: #93a1a1; }
+  
+
+.reveal p {
+    text-align: right;
+    font-family: "Tajawal", sans-serif;
+
+  }
+  .reveal ul {
+    display: block;
+    direction:rtl;
+    text-align: right;
+    font-family: "Tajawal", sans-serif;
+
+  }
+  .reveal ol {
+    display: block;
+    direction: rtl;
+    text-align: right;
+    font-family: "Tajawal", sans-serif;
+  }
+  .reveal section div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Tajawal", sans-serif;
+
+  }
+
+#title  {
+	text-align: right;
+  font-family: "Tajawal", sans-serif;
+
+  }
+  
+ .reveal .subinfo {
+  text-align: right;
+  font-family: "Tajawal", sans-serif;
+
+  }
+  
+ .reveal .subinfo-contacts {
+  text-transform: capitalize;
+  font-family: "Tajawal", sans-serif;
+ }
+  
+  .reveal h4 {
+    text-transform: capitalize;
+    text-align: right;
+    font-family: "Tajawal", sans-serif;
+
+  }
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #eee8d5;
+  font-family: "Tajawal", sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  text-shadow: none;
+  word-wrap: break-word; }
+  

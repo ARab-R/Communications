@@ -1,0 +1,117 @@
+---
+output:
+  revealjs::revealjs_presentation:
+    self_contained: false
+    reveal_options:
+      slideNumber: true
+    theme: moon
+    css: "css/my_css.css"
+    reveal_plugins: ["notes","search", "chalkboard"]
+    highlight: tango
+    smart: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library("fontawesome")
+library("DiagrammeR")
+```
+
+
+<section>
+
+
+</br><h1 id='title'>Hugo & Git ورشة عمل </h1>
+</br></br><h3  class= 'subinfo subinfo-author'> حسين السلمان `r fa("id-badge",fill = "gray")`</h3>
+<h5 class = 'subinfo subinfo-contacts'>@Arabian_Analyst `r fa("twitter",fill = "gray")` </h5>
+<h5 class = 'subinfo subinfo-contacts'>https://ArabianAnalyst.com `r fa("link",fill = "gray")` </h5>
+<h5 class = 'subinfo subinfo-date'>`r Sys.Date()` `r fa("calendar-day",fill = "gray")` </h5>
+</br>
+
+
+<aside class="notes">
+مساء الخير جميعاً ، شكراً لكم جميعاً على حضور هذه الورشة. اسمي حسين السلمان وأنا هنا اليوم للحديث عن تطوير الشبكات الثابتة والبدء في إنشاء المحتوى في أي وقت من الأوقات. سأتحدث عن ماهية Hugo ولماذا تفضله على الحلول الأخرى. ثم سنغوص أعمق قليلاً في ميكانيكا Hugo وهيكل الدليل الخاص به. لاحقًا ، سأستكشف معك طريقة مجانية لنشر موقع الويب الأول الخاص بك.
+</aside>
+
+</section>
+
+
+## أهداف ورشة العمل
+
+<br> 
+
+- القدرة على صنع مواقع ثابتة بشكل فعال بإستخدام Hugo
+
+-  استطلاع الإعدادات المتاحة وتغييرها حسب المتطلبات للموقع
+
+- استطلاع امكانية تقنية Git لإدارة الإصدارات
+
+-  البدء في المساهمة في إثراء المحتوى العربي على موقعنا ArabR-Community 
+
+
+
+## ؟ Hugo ما هو  
+ 
+<p>
+<q>
+"
+ هو أحد أشهر Hugo
+ <span class="fragment highlight-blue" data-fragment-index="1">
+مولدات المواقع الثابتة </span>
+  مفتوحة المصدر. بفضل <span class="fragment highlight-blue" data-fragment-index="1">
+ سرعته ومرونته </span>, المذهلة ، هوجو يعيد المتعة إلى بناء مواقع الويب مجددا."</q></p> <p style="text-align:right;"><small>~goHugo.io</small></p>
+</p>
+
+
+#### Shareable Analysis: 
+
+<p><q>
+"<span class="fragment highlight-blue" data-fragment-index="1">
+Flexible</span>
+and 
+<span class="fragment highlight-blue" data-fragment-index="1">
+light</span>
+content that can be 
+<span class="fragment highlight-blue" data-fragment-index="1">
+easily</span>
+shared with multiple stackholders in 
+<span class="fragment highlight-blue" data-fragment-index="1">
+flexible formats</span>
+</span>
+"</q></p>
+<p style="text-align:right;"><small>~My own definition</small></p>
+
+## Why do we care? 
+
+<span class="fragment">
+<h4>Reproducibility & Shareability in Business</h4>
+</span>
+
+  >   - Tremendous effeciency.
+  >   - Reproducibility builds trust. 
+  >   - Foster Learning envirnoment 
+  >   - Faster to deploy
+
+
+<aside class="notes">
+<b>Tremendous effeciency.</b></br>
+<p>
+More often than not, you will face simillar requirements in business. Having  many problems are in fact similar  
+
+
+</p></br>
+<b>Reproducibility builds trust.</b></br>
+<p>
+
+
+</p></br>
+<b>Foster Learning envirnoment</b> </br>
+<p>
+
+</p></br>
+<b>Faster to deploy</b></br>
+<p>
+
+</p></br>
+
+</aside>
