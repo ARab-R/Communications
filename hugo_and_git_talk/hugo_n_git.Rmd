@@ -1,6 +1,7 @@
 ---
 output:
   revealjs::revealjs_presentation:
+    incremental: true
     self_contained: false
     reveal_options:
       slideNumber: true
@@ -30,7 +31,7 @@ library("DiagrammeR")
 
 
 <aside class="notes">
-مساء الخير جميعاً ، شكراً لكم جميعاً على حضور هذه الورشة. اسمي حسين السلمان وأنا هنا اليوم للحديث عن تطوير الشبكات الثابتة والبدء في إنشاء المحتوى في أي وقت من الأوقات. سأتحدث عن ماهية Hugo ولماذا تفضله على الحلول الأخرى. ثم سنغوص أعمق قليلاً في ميكانيكا Hugo وهيكل الدليل الخاص به. لاحقًا ، سأستكشف معك طريقة مجانية لنشر موقع الويب الأول الخاص بك.
+مساء الخير جميعاً ، شكراً لكم جميعاً على حضور هذه الورشة. اسمي حسين السلمان وأنا هنا اليوم للحديث عن تطوير الشبكات الثابتة والبدء في إنشاء المحتوى في أي وقت من الأوقات. سأتحدث عن ماهية هوغو ولماذا تفضله على الحلول الأخرى. ثم سنغوص أعمق قليلاً في ميكانيكا هوغو وهيكل الدليل الخاص به. لاحقًا ، سأستكشف معك طريقة مجانية لنشر موقع الويب الأول الخاص بك.
 </aside>
 
 </section>
@@ -40,22 +41,23 @@ library("DiagrammeR")
 
 <br> 
 
-- القدرة على صنع مواقع ثابتة بشكل فعال بإستخدام Hugo
+- القدرة على صنع مواقع ثابتة بشكل فعال بإستخدام هوغو
 
--  استطلاع الإعدادات المتاحة وتغييرها حسب المتطلبات للموقع
+- استطلاع الإعدادات المتاحة وتغييرها حسب المتطلبات للموقع
 
-- استطلاع امكانية تقنية Git لإدارة الإصدارات
+- استطلاع امكانية تقنية Github كخدمة استضافة للمواقع
 
--  البدء في المساهمة في إثراء المحتوى العربي على موقعنا ArabR-Community 
+- البدء في المساهمة في إثراء المحتوى العربي على موقعنا ArabR-Community 
 
 
 
-## ؟ Hugo ما هو  
+## ما هو هوغو؟ 
  
+<img src="https://d33wubrfki0l68.cloudfront.net/c38c7334cc3f23585738e40334284fddcaf03d5e/2e17c/images/hugo-logo-wide.svg" width="50%">
 <p>
 <q>
 "
- هو أحد أشهر Hugo
+ هوغو هو أحد أشهر
  <span class="fragment highlight-blue" data-fragment-index="1">
 مولدات المواقع الثابتة </span>
   مفتوحة المصدر. بفضل <span class="fragment highlight-blue" data-fragment-index="1">
@@ -63,55 +65,71 @@ library("DiagrammeR")
 </p>
 
 
-#### Shareable Analysis: 
+### هوغو أيضا
 
-<p><q>
-"<span class="fragment highlight-blue" data-fragment-index="1">
-Flexible</span>
-and 
-<span class="fragment highlight-blue" data-fragment-index="1">
-light</span>
-content that can be 
-<span class="fragment highlight-blue" data-fragment-index="1">
-easily</span>
-shared with multiple stackholders in 
-<span class="fragment highlight-blue" data-fragment-index="1">
-flexible formats</span>
-</span>
-"</q></p>
-<p style="text-align:right;"><small>~My own definition</small></p>
+- برنامج كامل لا يعتمد على اي ملحقات خارجية 
+- ليس له واجهة مستخدم .. فقط اوامر بسيطة 
 
-## Why do we care? 
+---
 
-<span class="fragment">
-<h4>Reproducibility & Shareability in Business</h4>
-</span>
+### قد يكون هوغو الخيار الأنسب لك لتطوير موقع شخصي لك او موقع لمؤسستك 
 
-  >   - Tremendous effeciency.
-  >   - Reproducibility builds trust. 
-  >   - Foster Learning envirnoment 
-  >   - Faster to deploy
+- #### المحتوى 
+ 
+  - الأخبار و آخر التطورات 
+  - مقالات متنوعة
+  - مدونات 
+  - سيرة ذاتية
+
+- #### تقنيا
+
+  - وظائف بسيطة  
+  - سهل التعلم والتطوير 
+  - سرعة في التطوير وكتابة المحتوى
 
 
-<aside class="notes">
-<b>Tremendous effeciency.</b></br>
-<p>
-More often than not, you will face simillar requirements in business. Having  many problems are in fact similar  
+---
+
+### هوغو ليس مناسب لك    
+
+- #### المحتوى 
+  
+  - منصة تواصل أجتماعي 
+  - متجر إلكتروني 
+  - منتدى حواري
+  
+
+- #### تقنيا 
+  
+  - تتطلب وظائف متخصصة 
+  - تتطلب تفاعلية عالية مع الجمهور
+  - تحتوى على تطبيقات ويب متقدمة
 
 
-</p></br>
-<b>Reproducibility builds trust.</b></br>
-<p>
+ 
+## هذه الورشة تنقسم إلى ثلاثة اقسام 
+
+### القسم الأول : تطوير الموقع 
+
+  - [تحميل و تنصيب هوغو ](https://gohugo.io/getting-started/installing/) 
+  - تطوير موقع بسيط و كتابة المحتوى
+  - تغيير بعض التخصيصات و [تغيير الثيم](https://themes.gohugo.io/)
+  - استطلاع طريقة و ملفات هوغو لصنع صفحات الويب
+
+--- 
+
+### القسم الثاني: استضافة الموقع على غيت هب
+
+  - فتح حساب على غيت هب 
+  - ضبط إعدادات غيت هب لإمكانية استضافة المواقع 
 
 
-</p></br>
-<b>Foster Learning envirnoment</b> </br>
-<p>
 
-</p></br>
-<b>Faster to deploy</b></br>
-<p>
+--- 
 
-</p></br>
+### ArabR-Community القسم الثالث : المساهمة في محتوى 
 
-</aside>
+  - شرح طريقة عمل موقعنا و المشاركة فيه  
+  - طريقة إضافة ملفك ككاتب
+  - شرح طريقة التعامل مع محتوى متعدد اللغات 
+

@@ -74,5 +74,6 @@ direction: rtl;
   letter-spacing: normal;
   text-transform: uppercase;
   text-shadow: none;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+   text-align: right;}
   
