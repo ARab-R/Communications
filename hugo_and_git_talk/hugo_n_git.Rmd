@@ -7,7 +7,7 @@ output:
       slideNumber: true
     theme: moon
     css: "css/my_css.css"
-    reveal_plugins: ["notes","search", "chalkboard"]
+    #reveal_plugins: ["notes","search", "chalkboard"]
     highlight: tango
     smart: false
 ---
